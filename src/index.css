@@ -75,6 +75,7 @@ p {
 .todoItem {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 14px;
   padding: 14px;
   border-radius: 14px;
@@ -86,8 +87,10 @@ p {
 }
 
 .actionsContainer {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 14px;
 }
 

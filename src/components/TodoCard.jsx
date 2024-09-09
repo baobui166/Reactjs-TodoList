@@ -4,12 +4,17 @@ function TodoCard({ children, deleteTodo, updateTodo, index }) {
   return (
     <li className="todoItem">
       <div className="actionsContainer">
-        {children}
-        <i
-          className="fa-solid fa-pen-to-square"
-          onClick={() => updateTodo(index)}
-        ></i>{" "}
-        <i className="fa-solid fa-trash" onClick={() => deleteTodo(index)}></i>
+        <span>{children}</span>
+        <div>
+          <i
+            className="fa-solid fa-pen-to-square"
+            onClick={() => updateTodo(index)}
+          ></i>{" "}
+          <i
+            className="fa-solid fa-trash"
+            onClick={() => deleteTodo(index)}
+          ></i>
+        </div>
       </div>
     </li>
   );
